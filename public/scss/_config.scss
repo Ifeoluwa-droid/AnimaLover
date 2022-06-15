@@ -1,0 +1,783 @@
+/******* Variables ********/
+
+// colors
+$color-white: #fff;
+$color-accent: #4C76E2;
+$color-dark: #333333;
+
+// font-families
+
+
+// font-sizes
+$fs-0-5: .5rem;
+$fs-0-6: .6rem;
+$fs-0-7: .7rem;
+$fs-0-8: .8rem;
+$fs-0-9: .9rem;
+$fs-1: 1rem;
+$fs-1-5: 1.5rem;
+$fs-2: 2rem;
+$fs-2-5: 2.5rem;
+$fs-3: 3rem;
+$fs-3-5: 3.5rem;
+$fs-4: 4rem;
+$fs-4-5: 4.5rem;
+$fs-5: 5rem;
+$fs-5-5: 5.5rem;
+$fs-6: 6rem;
+$fs-6-5: 6.5rem;
+$fs-7: 7rem;
+
+// font-weights
+$fw-1: 100;
+$fw-2: 200;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+$fw-8: 800;
+$fw-9: 900;
+
+/******* Resets *********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+image {
+    display: block;
+}
+
+// Utility Classes
+
+// Text colors
+
+.text-color-accent {
+    color: $color-accent;
+}
+
+.text-color-black {
+    color: $color-dark;
+}
+
+.text-color-white {
+    color: $color-white;
+}
+
+// Background colors
+
+.bg-color-accent {
+    background-color: $color-accent;
+}
+
+.bg-color-dark {
+    background-color: $color-dark;
+}
+
+.bg-color-white {
+    background-color: $color-white;
+}
+
+// Flexboxes
+
+.d-flex-row {
+    display: flex;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+// Grid
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+// Alignments
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+// Justifications
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+// gaps
+.gap-0-5 {
+    gap: .5rem;
+}
+
+.gap-0-6 {
+    gap: .6rem;
+}
+
+.gap-0-7 {
+    gap: .7rem;
+}
+
+.gap-0-8 {
+    gap: .8rem;
+}
+
+.gap-0-9 {
+    gap: .9rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.gap-4 {
+    gap: 4rem;
+}
+
+.gap-5 {
+    gap: 5rem;
+}
+
+.gap-6 {
+    gap: 6rem;
+}
+
+.gap-7 {
+    gap: 7rem;
+}
+
+
+//  Fontsizes
+.fs-0-5 {
+    font-size: $fs-0-5;
+}
+
+.fs-0-6 {
+    font-size: $fs-0-6;
+}
+
+.fs-0-7 {
+    font-size: $fs-0-7;
+}
+
+.fs-0-8 {
+    font-size: $fs-0-8;
+}
+
+.fs-0-9 {
+    font-size: $fs-0-9;
+}
+
+.fs-1 {
+    font-size: $fs-1;
+}
+
+.fs-1-5 {
+    font-size: $fs-1-5;
+}
+
+.fs-2 {
+    font-size: $fs-2;
+}
+
+.fs-2-5 {
+    font-size: $fs-2-5;
+}
+
+.fs-3 {
+    font-size: $fs-3;
+}
+
+.fs-3-5 {
+    font-size: $fs-3-5;
+}
+
+.fs-4 {
+    font-size: $fs-4;
+}
+
+.fs-4-5 {
+    font-size: $fs-4-5;
+}
+
+.fs-5 {
+    font-size: $fs-5;
+}
+
+.fs-5-5 {
+    font-size: $fs-3-5;
+}
+
+.fs-6 {
+    font-size: $fs-6;
+}
+
+.fs-6-5 {
+    font-size: $fs-3-5;
+}
+
+.fs-7 {
+    font-size: $fs-7;
+}
+
+// ********* viewport-widths ***********
+
+.fv-0-5 {
+    font-size: .5vw;
+}
+
+.fv-0-6 {
+    font-size: .6vw;
+}
+
+.fv-0-7 {
+    font-size: .7vw;
+}
+
+.fv-0-8 {
+    font-size: .8vw;
+}
+
+.fv-0-9 {
+    font-size: .9vw;
+}
+
+.fv-1 {
+    font-size: 1vw;
+}
+
+.fv-1-5 {
+    font-size: 1.5vw;
+}
+
+.fv-2 {
+    font-size: 2vw;
+}
+
+.fv-2-5 {
+    font-size: 2.5vw;
+}
+
+.fv-3 {
+    font-size: 3vw;
+}
+
+.fv-3-5 {
+    font-size: 3.5vw;
+}
+
+.fv-4 {
+    font-size: 4vw;
+}
+
+.fv-4-5 {
+    font-size: 4.5vw;
+}
+
+.fv-5 {
+    font-size: 5vw;
+}
+
+.fv-5-5 {
+    font-size: 5.5vw;
+}
+
+.fv-6 {
+    font-size: 6vw;
+}
+
+.fv-6-5 {
+    font-size: 6.5vw;
+}
+
+.fv-7 {
+    font-size: 7vw;
+}
+
+
+
+
+// Fontweights
+
+.fw-1 {
+    font-weight: $fw-1;
+}
+
+.fw-2 {
+    font-weight: $fw-2;
+}
+
+.fw-3 {
+    font-weight: $fw-3;
+}
+
+.fw-4 {
+    font-weight: $fw-4;
+}
+
+.fw-5 {
+    font-weight: $fw-5;
+}
+
+.fw-6 {
+    font-weight: $fw-6;
+}
+
+.fw-7 {
+    font-weight: $fw-7;
+}
+
+.fw-8 {
+    font-weight: $fw-8;
+}
+
+.fw-9 {
+    font-weight: $fw-9;
+}
+
+// Margins
+
+.mtb-1 {
+    margin: 1rem 0;
+}
+
+.mtb-1-5 {
+    margin: 1.5rem 0;
+}
+
+.mtb-2 {
+    margin: 2rem 0;
+}
+
+.mtb-2-5 {
+    margin: 2.5rem 0;
+}
+
+.mtb-3 {
+    margin: 3rem 0;
+}
+
+.mtb-3-5 {
+    margin: 3.5rem 0;
+}
+
+.mtb-4 {
+    margin: 4rem 0;
+}
+
+.mtb-4-5 {
+    margin: 4.5rem 0;
+}
+
+.mtb-5 {
+    margin: 5rem 0;
+}
+
+
+// *********************************
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-1-5 {
+    margin-top: 1.5rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-2-5 {
+    margin-top: 2.5rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-3-5 {
+    margin-top: 3.5rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-4-5 {
+    margin-top: 4.5rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-5-5 {
+    margin-top: 5.5rem;
+}
+
+
+// ***********************************
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-1-5 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-2-5 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mb-3-5 {
+    margin-bottom: 3.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mb-4-5 {
+    margin-bottom: 4.5rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.mb-5-5 {
+    margin-bottom: 5.5rem;
+}
+
+
+// Padding
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
+
+.p-4 {
+    padding: 4rem;
+}
+
+.p-5 {
+    padding: 5rem;
+}
+
+.p-6 {
+    padding: 6rem;
+}
+
+.p-7 {
+    padding: 7rem;
+}
+
+.p-8 {
+    padding: 8rem;
+}
+
+// ***************************
+
+.plr-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.plr-1-5 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.plr-2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.plr-2-5 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.plr-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.plr-3-5 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+.plr-4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.plr-4-5 {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+}
+
+.plr-5 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.plr-5-5 {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+}
+
+.plr-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.plr-6-5 {
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+}
+
+.plr-7 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.plr-7-5 {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+}
+
+.plr-8 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+// *******************************
+
+.ptb-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ptb-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.ptb-3 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.ptb-4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.ptb-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.ptb-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.ptb-7 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.ptb-8 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+// Widths
+
+.w-1 {
+    width: 10%;
+}
+
+.w-1-5 {
+    width: 15%;
+}
+
+.w-2 {
+    width: 20%;
+}
+
+.w-2-5 {
+    width: 25%;
+}
+
+.w-3 {
+    width: 30%;
+}
+
+.w-33 {
+    width: 33%;
+}
+
+.w-3-5 {
+    width: 35%;
+}
+
+.w-4 {
+    width: 40%;
+}
+
+.w-4-5 {
+    width: 45%;
+}
+
+.w-5 {
+    width: 50%;
+}
+
+.w-5-5 {
+    width: 55%;
+}
+
+.w-6 {
+    width: 60%;
+}
+
+.w-6-5 {
+    width: 65%;
+}
+
+.w-7 {
+    width: 70%;
+}
+
+.w-7-5 {
+    width: 75%;
+}
+
+.w-8 {
+    width: 80%;
+}
+
+.w-8-5 {
+    width: 85%;
+}
+
+.w-9 {
+    width: 90%;
+}
+
+.w-9-5 {
+    width: 95%;
+}
+
+.w-10 {
+    width: 100%;
+}
+
+// Heights
+
+.h-mp {
+    height: inherit;
+}
+
+.h-fc {
+    height: fit-content;
+}
+
+// Linespacings
+
+.lh-1-5 {
+    line-height: 1.5;
+}
+
+.lh-2 {
+    line-height: 2;
+}
+
+.lh-2-5 {
+    line-height: 2.5;
+}
+
+.lh-3 {
+    line-height: 3;
+}
+
+.lh-3-5 {
+    line-height: 3.5;
+}
+
+.lh-4 {
+    line-height: 4;
+}
+
+// transforms
+
+.flip {
+    transform: scaleX(-1);
+}
