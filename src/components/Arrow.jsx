@@ -1,5 +1,5 @@
 import React from 'react';
-import {transform_rotate_neg_180} from '../styles';
+import {transformRotateNeg180} from '../styles';
 
 
 function LeftArrow() {
@@ -12,7 +12,7 @@ function LeftArrow() {
 }
 
 function RightArrow() {
-    return <div className='arrow-btn' style={transform_rotate_neg_180}>
+    return <div className='arrow-btn' style={transformRotateNeg180}>
          <div className='arrow'>
             <div className='line'></div>
             <div className='line'></div>

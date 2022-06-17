@@ -11,31 +11,16 @@ const textColorAccent = {
     color: colorAccent
 }
 
-
-
-
-
-
-
-
-
-
-
 const articleBgDarkStyle = {
     backgroundColor: colorDark
 }
 
-const padding_8_2 = {
-    padding: '8rem 2rem'
-}
-
-const transform_rotate_neg_180 = {
+const transformRotateNeg180 = {
     transform: 'rotate(-180deg)'
 }
 
 export {
     textColorAccent,
     articleBgDarkStyle, 
-    padding_8_2, 
-    transform_rotate_neg_180
+    transformRotateNeg180
 }

@@ -40,8 +40,8 @@ nav ul {
 }
 
 
-.dropdown-btn { 
-
+.open-nav-btn { 
+    cursor: pointer;
     display: none;
 
     & .drop-line {
@@ -229,25 +229,32 @@ nav ul {
 }
 
 @media screen and (max-width: 850px) {
-    .dropdown-btn {
+    .open-nav-btn {
         display: block;
     }
 
     nav ul {
         display: none;
-    }
+        
 
-    nav ul.active {
-        display: block;
-        flex-direction: column;
-        justify-content: space-around;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 70%;
-        height: 100vh;
-        background: rgba(76, 118, 226, .5);
-        z-index: 1;
+        &.active {
+            display: flex;
+            flex-direction: column !important;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 0%;
+            color: white;
+            background: rgba(76, 118, 226, .5);
+            z-index: 1;
+            animation: .5s 1 forwards slidein;
+
+            li {
+                display: block;
+            }
+        }
     }
 
     .nav-link {
@@ -272,6 +279,17 @@ nav ul {
         &:hover a::after{
             transform: scaleX(1);
         }
+    }
+}
+
+@keyframes slidein {
+    
+    0% {
+        width: 0%
+    }
+
+    100% {
+        width: 70%;
     }
 }
 

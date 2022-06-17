@@ -10,9 +10,10 @@ import Video from './Video';
 import Footer from './Footer';
 
 function App() {
+    
     return (
         <div>
-            <Header />
+            <Header/>
             <main>
                 <section>
                     <div id="main__section-1">
